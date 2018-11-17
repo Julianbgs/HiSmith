@@ -1,3 +1,32 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("PT Sans Italic"), local(PTSans-Italic), url(//fonts.gstatic.com/s/ptsans/v9/jizYRExUiTo99u79D0e0x8mM.eot?#) format("eot"), url(//fonts.gstatic.com/s/ptsans/v9/jizYRExUiTo99u79D0e0x8mI.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptsans/v9/jizYRExUiTo99u79D0e0x8mO.woff) format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("PT Sans Bold Italic"), local(PTSans-BoldItalic), url(//fonts.gstatic.com/s/ptsans/v9/jizdRExUiTo99u79D0e8fOydLxUZ.eot?#) format("eot"), url(//fonts.gstatic.com/s/ptsans/v9/jizdRExUiTo99u79D0e8fOydLxUd.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptsans/v9/jizdRExUiTo99u79D0e8fOydLxUb.woff) format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local(PTSans-Regular), url(//fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEwQ.eot?#) format("eot"), url(//fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KExQ.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KEww.woff) format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"), local(PTSans-Bold), url(//fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0O6tKQ.eot?#) format("eot"), url(//fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0O6tLQ.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0O6tKw.woff) format("woff");
+}
+@import url(http://allfont.ru/allfont.css?fonts=pt-sans);
+
 html {
   width: 100%;
 }
@@ -86,6 +115,139 @@ textarea:active {
   .container {
     width: 1280px;
   }
+}
+
+.header {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.header__language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-right: 78px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header__language-type {
+  position: relative;
+  float: left;
+  width: 22px;
+  margin-left: 6px;
+  font-family: "PT Sans", arial;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.header__language-type--mod {
+  color: #ff351b;
+}
+
+.header__logo {
+  float: left;
+  width: 157px;
+  height: 44px;
+  overflow: hidden;
+  margin-left: 77px;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.header__menu {
+  position: relative;
+  float: left;
+  width: -webkit-calc(100% - 235px);
+  width: calc(100% - 235px);
+  padding-top: 22px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header__menu-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  list-style: none;
+  padding-right: 137px;
+}
+
+.header__menu-list li {
+  margin-left: 33px;
+}
+
+.header__menu-list li a {
+  position: relative;
+  width: 100%;
+  font-size: 20px;
+  font-family: "PT Sans", arial;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.header__menu-list li a:before {
+  position: absolute;
+  display: inline;
+  content: "";
+  width: 1px;
+  height: 19px;
+  background-color: black;
+  right: -15px;
+  top: 3px;
+}
+
+.header__search {
+  position: absolute;
+  right: 85px;
+  top: 97px;
+  overflow: hidden;
+  width: 21px;
+  height: 20px;
+}
+
+.header__search img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=styles.css.map */
