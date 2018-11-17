@@ -1,0 +1,115 @@
+.baner {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100vh;
+  margin-top: 20px;
+  background-image: url("../img/baner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__numbers {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    top: 320px;
+    left: 156px;
+    color: white;
+
+    &-elem {
+      position: relative;
+      float: left;
+      font-family: $PtSans;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin-right: 16px;
+
+      &::before {
+        position: absolute;
+        display: inline;
+        content: "";
+        width: 2px;
+        height: 23px;
+        background-color: #ff351b;
+        left: 18px;
+        top: 1px;
+      }
+
+      &:last-of-type::before {
+        display: none;
+      }
+    }
+  }
+
+  &__description {
+    position: absolute;
+    top: 365px;
+    left: 170px;
+
+      &-elem {
+        font-family: $PtSans;
+        font-size: 48px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #ffffff;
+
+        &:before {
+          position: absolute;
+          content: "";
+          display: inline;
+          width: 2px;
+          height: 45px;
+          background-color: #ff351b;
+          top: 100%;
+          left: 6px;
+        }
+      }
+  }
+
+  &__more {
+    position: absolute;
+    top: 583px;
+    left: 173px;
+
+      &-elem {
+        font-family: $PtSans;
+        font-size: 24px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ff351b;
+      }
+  }
+
+  &__group {
+    position: absolute;
+    top: 114px;
+    right: 113px;
+    width: 243px;
+    height: 471px;
+    overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 338px;
+    right: 80px;
+  }
+}

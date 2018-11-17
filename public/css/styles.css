@@ -250,4 +250,127 @@ textarea:active {
   object-fit: contain;
 }
 
+.baner {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100vh;
+  margin-top: 20px;
+  background-image: url("../img/baner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.baner__numbers {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  top: 320px;
+  left: 156px;
+  color: white;
+}
+
+.baner__numbers-elem {
+  position: relative;
+  float: left;
+  font-family: "PT Sans", arial;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-right: 16px;
+}
+
+.baner__numbers-elem:before {
+  position: absolute;
+  display: inline;
+  content: "";
+  width: 2px;
+  height: 23px;
+  background-color: #ff351b;
+  left: 18px;
+  top: 1px;
+}
+
+.baner__numbers-elem:last-of-type:before {
+  display: none;
+}
+
+.baner__description {
+  position: absolute;
+  top: 365px;
+  left: 170px;
+}
+
+.baner__description-elem {
+  font-family: "PT Sans", arial;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.baner__description-elem:before {
+  position: absolute;
+  content: "";
+  display: inline;
+  width: 2px;
+  height: 45px;
+  background-color: #ff351b;
+  top: 100%;
+  left: 6px;
+}
+
+.baner__more {
+  position: absolute;
+  top: 583px;
+  left: 173px;
+}
+
+.baner__more-elem {
+  font-family: "PT Sans", arial;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ff351b;
+}
+
+.baner__group {
+  position: absolute;
+  top: 114px;
+  right: 113px;
+  width: 243px;
+  height: 471px;
+  overflow: hidden;
+}
+
+.baner__group img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.baner__arrow {
+  position: absolute;
+  top: 338px;
+  right: 80px;
+}
+
 /*# sourceMappingURL=styles.css.map */
