@@ -1,0 +1,127 @@
+.gerry {
+  position: relative;
+  float: left;
+  width: 100%;
+
+    &__title {
+      position: relative;
+      margin-top: 60px;
+      margin-left: 170px;
+      font-family: $PtSans;
+      font-size: 34px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #636363;
+    }
+
+  &__slider {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-left: 149px;
+    margin-top: 50px;
+  }
+
+  &__slide {
+    position: relative;
+    float: left;
+
+      &-img {
+        position: relative;
+        width: 1131px;
+        height: 564px;
+        overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+      }
+
+    &-elem {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 20%;
+
+      &:nth-of-type(2) {
+        left: 48%;
+      }
+
+      &:nth-of-type(3) {
+        left: 77%;
+      }
+
+    }
+
+    &-title {
+      font-family: $PtSans;
+      font-size: 17px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000000;
+
+      &:before {
+        position: absolute;
+        display: inline;
+        content: "";
+        height: 12px;
+        width: 2px;
+        background-color: orangered;
+        top: 45px;
+      }
+    }
+
+    &-author {
+      font-family: $PtSans;
+      font-size: 10px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #000000;
+      margin-top: 16px;
+    }
+  }
+
+}
+
+.slick-prev {
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      background-repeat: no-repeat;
+      background-image: url("../img/icons/arrow-prev.png");
+      width: 10px;
+      height: 17px;
+      top: -80px;
+      left: -40px;
+    }
+}
+
+.slick-next {
+  right: 0;
+  &:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/arrow-next.png");
+    width: 10px;
+    height: 17px;
+    top: -80px;
+    right: 250px;
+    z-index: 1;
+
+  }
+}
