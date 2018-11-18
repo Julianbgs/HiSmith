@@ -457,4 +457,79 @@ textarea:active {
   top: 20px;
 }
 
+.rosa {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 394px;
+  background-color: #636363;
+}
+
+.rosa__title {
+  position: absolute;
+  top: 60px;
+  left: 170px;
+  font-family: "PT Sans", arial;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.rosa__descr {
+  position: absolute;
+  top: 125px;
+  left: 363px;
+  font-family: "PT Sans", arial;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.rosa__sub-descr {
+  position: absolute;
+  top: 210px;
+  left: 364px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.rosa__sub-descr:before {
+  position: absolute;
+  display: inline;
+  content: "";
+  width: 2px;
+  height: 39px;
+  background-color: #ff351b;
+  right: -13px;
+  top: 66px;
+}
+
+.rosa__more {
+  position: absolute;
+  top: 332px;
+  right: 240px;
+  font-family: "PT Sans", arial;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=styles.css.map */
