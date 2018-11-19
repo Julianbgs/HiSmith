@@ -1,4 +1,32 @@
 @font-face {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: local("PT Serif Italic"), local(PTSerif-Italic), url(//fonts.gstatic.com/s/ptserif/v9/EJRTQgYoZZY2vCFuvAFT_r21dg.eot?#) format("eot"), url(//fonts.gstatic.com/s/ptserif/v9/EJRTQgYoZZY2vCFuvAFT_r21cg.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptserif/v9/EJRTQgYoZZY2vCFuvAFT_r21dA.woff) format("woff");
+}
+
+@font-face {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  src: local("PT Serif Bold Italic"), local(PTSerif-BoldItalic), url(//fonts.gstatic.com/s/ptserif/v9/EJRQQgYoZZY2vCFuvAFT9gaQZynfpA.eot?#) format("eot"), url(//fonts.gstatic.com/s/ptserif/v9/EJRQQgYoZZY2vCFuvAFT9gaQZynfoA.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptserif/v9/EJRQQgYoZZY2vCFuvAFT9gaQZynfpg.woff) format("woff");
+}
+
+@font-face {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Serif"), local(PTSerif-Regular), url(//fonts.gstatic.com/s/ptserif/v9/EJRVQgYoZZY2vCFuvAFWzrs.eot?#) format("eot"), url(//fonts.gstatic.com/s/ptserif/v9/EJRVQgYoZZY2vCFuvAFWzr8.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptserif/v9/EJRVQgYoZZY2vCFuvAFWzrk.woff) format("woff");
+}
+
+@font-face {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Serif Bold"), local(PTSerif-Bold), url(//fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qSVy8.eot?#) format("eot"), url(//fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qSVys.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qSVy0.woff) format("woff");
+}
+
+@font-face {
   font-family: "PT Sans";
   font-style: italic;
   font-weight: 400;
@@ -26,6 +54,7 @@
   src: local("PT Sans Bold"), local(PTSans-Bold), url(//fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0O6tKQ.eot?#) format("eot"), url(//fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0O6tLQ.woff2) format("woff2"), url(//fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0O6tKw.woff) format("woff");
 }
 @import url(http://allfont.ru/allfont.css?fonts=pt-sans);
+@import url(http://allfont.ru/allfont.css?fonts=pt-serif);
 
 html {
   width: 100%;
@@ -143,6 +172,19 @@ textarea:active {
   box-sizing: border-box;
 }
 
+@media (max-width: 1024px) {
+  .header__language {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__language {
+    padding-bottom: 0;
+    padding-right: 5px;
+  }
+}
+
 .header__language-type {
   position: relative;
   float: left;
@@ -159,6 +201,13 @@ textarea:active {
   text-transform: uppercase;
 }
 
+@media (max-width: 320px) {
+  .header__language-type {
+    font-size: 7px;
+    margin-left: 0;
+  }
+}
+
 .header__language-type--mod {
   color: #ff351b;
 }
@@ -169,6 +218,30 @@ textarea:active {
   height: 44px;
   overflow: hidden;
   margin-left: 77px;
+}
+
+@media (max-width: 1024px) {
+  .header__logo {
+    width: 101px;
+    height: 49px;
+    padding-top: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__logo {
+    width: 119px;
+    height: 58px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__logo {
+    margin-left: 10px;
+  }
 }
 
 .header__logo img {
@@ -188,6 +261,20 @@ textarea:active {
   box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+  .header__menu {
+    width: -webkit-calc(100% - 160px);
+    width: calc(100% - 160px);
+  }
+}
+
+@media (max-width: 320px) {
+  .header__menu {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
 .header__menu-list {
   position: relative;
   display: -webkit-box;
@@ -204,10 +291,40 @@ textarea:active {
   justify-content: flex-end;
   list-style: none;
   padding-right: 137px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .header__menu-list {
+    padding-right: 70px;
+    top: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__menu-list {
+    padding-right: 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__menu-list {
+    padding-left: 0;
+  }
 }
 
 .header__menu-list li {
   margin-left: 33px;
+}
+
+@media (max-width: 320px) {
+  .header__menu-list li {
+    margin-left: 12px;
+  }
 }
 
 .header__menu-list li a {
@@ -223,6 +340,18 @@ textarea:active {
   color: #000000;
 }
 
+@media (max-width: 1024px) {
+  .header__menu-list li a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__menu-list li a {
+    font-size: 9px;
+  }
+}
+
 .header__menu-list li a:before {
   position: absolute;
   display: inline;
@@ -234,6 +363,19 @@ textarea:active {
   top: 3px;
 }
 
+@media (max-width: 1024px) {
+  .header__menu-list li a:before {
+    height: 11px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__menu-list li a:before {
+    right: -6px;
+    top: 0;
+  }
+}
+
 .header__search {
   position: absolute;
   right: 85px;
@@ -241,6 +383,25 @@ textarea:active {
   overflow: hidden;
   width: 21px;
   height: 20px;
+}
+
+@media (max-width: 1024px) {
+  .header__search {
+    top: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__search {
+    right: 35px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__search {
+    right: 17px;
+    top: 51px;
+  }
 }
 
 .header__search img {
@@ -254,7 +415,7 @@ textarea:active {
   position: relative;
   float: left;
   width: 100%;
-  height: 100vh;
+  height: 690px;
   margin-top: 20px;
   background-image: url("../img/baner.png");
   background-repeat: no-repeat;
@@ -275,6 +436,12 @@ textarea:active {
   top: 320px;
   left: 156px;
   color: white;
+}
+
+@media (max-width: 320px) {
+  .baner__numbers {
+    left: 10px;
+  }
 }
 
 .baner__numbers-elem {
@@ -312,8 +479,14 @@ textarea:active {
   left: 170px;
 }
 
+@media (max-width: 320px) {
+  .baner__description {
+    left: 14px;
+  }
+}
+
 .baner__description-elem {
-  font-family: "PT Sans", arial;
+  font-family: "PT Serif", arial;
   font-size: 48px;
   font-weight: 400;
   font-style: normal;
@@ -321,6 +494,12 @@ textarea:active {
   line-height: 1;
   letter-spacing: normal;
   color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .baner__description-elem {
+    font-size: 28px;
+  }
 }
 
 .baner__description-elem:before {
@@ -340,8 +519,21 @@ textarea:active {
   left: 173px;
 }
 
+@media (max-width: 1024px) {
+  .baner__more {
+    top: 517px;
+  }
+}
+
+@media (max-width: 320px) {
+  .baner__more {
+    top: 547px;
+    left: 17px;
+  }
+}
+
 .baner__more-elem {
-  font-family: "PT Sans", arial;
+  font-family: "PT Serif", arial;
   font-size: 24px;
   font-weight: 400;
   font-style: italic;
@@ -351,6 +543,12 @@ textarea:active {
   color: #ff351b;
 }
 
+@media (max-width: 1024px) {
+  .baner__more-elem {
+    font-size: 14px;
+  }
+}
+
 .baner__group {
   position: absolute;
   top: 114px;
@@ -358,6 +556,13 @@ textarea:active {
   width: 243px;
   height: 471px;
   overflow: hidden;
+}
+
+@media (max-width: 320px) {
+  .baner__group {
+    right: 20px;
+    width: 168px;
+  }
 }
 
 .baner__group img {
@@ -371,6 +576,12 @@ textarea:active {
   position: absolute;
   top: 338px;
   right: 80px;
+}
+
+@media (max-width: 320px) {
+  .baner__arrow {
+    right: 16px;
+  }
 }
 
 .reason {
@@ -1020,7 +1231,6 @@ textarea:active {
 .rebec__box-more {
   position: relative;
   float: left;
-  width: 100%;
   font-family: "PT Sans", arial;
   font-size: 10px;
   font-weight: 400;

@@ -2,7 +2,7 @@
   position: relative;
   float: left;
   width: 100%;
-  height: 100vh;
+  height: 690px;
   margin-top: 20px;
   background-image: url("../img/baner.png");
   background-repeat: no-repeat;
@@ -16,6 +16,10 @@
     top: 320px;
     left: 156px;
     color: white;
+
+    @include breakpoint(max-width 320px){
+      left: 10px;
+    }
 
     &-elem {
       position: relative;
@@ -52,8 +56,12 @@
     top: 365px;
     left: 170px;
 
+    @include breakpoint(max-width 320px){
+      left: 14px;
+    }
+
       &-elem {
-        font-family: $PtSans;
+        font-family: $PtSerif;
         font-size: 48px;
         font-weight: normal;
         font-style: normal;
@@ -61,6 +69,10 @@
         line-height: 1;
         letter-spacing: normal;
         color: #ffffff;
+
+        @include breakpoint(max-width 1024px){
+          font-size: 28px;
+        }
 
         &:before {
           position: absolute;
@@ -80,8 +92,17 @@
     top: 583px;
     left: 173px;
 
+    @include breakpoint(max-width 1024px){
+      top: 517px;
+    }
+
+    @include breakpoint(max-width 320px){
+      top: 547px;
+      left: 17px;
+    }
+
       &-elem {
-        font-family: $PtSans;
+        font-family: $PtSerif;
         font-size: 24px;
         font-weight: normal;
         font-style: italic;
@@ -89,6 +110,10 @@
         line-height: normal;
         letter-spacing: normal;
         color: #ff351b;
+
+        @include breakpoint(max-width 1024px){
+          font-size: 14px;
+        }
       }
   }
 
@@ -99,6 +124,11 @@
     width: 243px;
     height: 471px;
     overflow: hidden;
+
+    @include breakpoint(max-width 320px){
+      right: 20px;
+      width: 168px;
+    }
 
       img {
         width: 100%;
@@ -111,5 +141,9 @@
     position: absolute;
     top: 338px;
     right: 80px;
+
+    @include breakpoint(max-width 320px){
+      right: 16px;
+    }
   }
 }
