@@ -812,4 +812,133 @@ textarea:active {
   object-fit: contain;
 }
 
+.tips {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.tips__box-tricks {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 500px;
+  padding-left: 280px;
+  padding-top: 60px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #636363;
+}
+
+.tips__box-tricks-title {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-bottom: 64px;
+}
+
+.tips__box-tricks-img {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 212px;
+  overflow: hidden;
+  margin-bottom: 13px;
+}
+
+.tips__box-tricks-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.tips__box-tricks-place {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.tips__arrow {
+  position: absolute;
+  top: 163px;
+  right: 50px;
+}
+
+.tips__arrow--mod {
+  left: 55%;
+}
+
+.tips__box-lifts {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 500px;
+  padding-top: 60px;
+  padding-left: 101px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #dddddd;
+}
+
+.tips__box-lifts-title {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #636363;
+  margin-bottom: 62px;
+}
+
+.tips__box-lifts-descr {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.77;
+  letter-spacing: normal;
+  color: orangered;
+  margin-bottom: 28px;
+}
+
+.tips__box-lifts-sub-descr {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #373737;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,125 @@
+.tips {
+  position: relative;
+  float: left;
+  width: 100%;
+
+    &__box-tricks {
+      position: relative;
+      float: left;
+      width: 50%;
+      height: 500px;
+      padding-left: 280px;
+      padding-top: 60px;
+      box-sizing: border-box;
+      background-color: #636363;
+
+        &-title {
+          position: relative;
+          float: left;
+          width: 100%;
+          font-family: $PtSans;
+          font-size: 34px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          color: #ffffff;
+          margin-bottom: 64px;
+        }
+
+      &-img {
+        position: relative;
+        float: left;
+        width: 300px;
+        height: 212px;
+        overflow: hidden;
+        margin-bottom: 13px;
+
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+      }
+
+      &-place{
+        position: relative;
+        float: left;
+        width: 100%;
+        font-family: $PtSans;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 1.89;
+        letter-spacing: normal;
+        color: #ffffff;
+      }
+    }
+
+  &__arrow{
+    position: absolute;
+    top: 163px;
+    right: 50px;
+
+      &--mod{
+        left: 55%;
+      }
+  }
+
+  &__box-lifts {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 500px;
+    padding-top: 60px;
+    padding-left: 101px;
+    box-sizing: border-box;
+    background-color: #dddddd;
+
+    &-title {
+      position: relative;
+      float: left;
+      width: 100%;
+      font-family: $PtSans;
+      font-size: 34px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #636363;
+      margin-bottom: 62px;
+    }
+
+    &-descr{
+      position: relative;
+      float: left;
+      width: 100%;
+      font-family: $PtSans;
+      font-size: 30px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.77;
+      letter-spacing: normal;
+      color: orangered;
+      margin-bottom: 28px;
+    }
+
+    &-sub-descr{
+      position: relative;
+      float: left;
+      width: 100%;
+      font-family: $PtSans;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: italic;
+      font-stretch: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      color: #373737;
+    }
+  }
+}
