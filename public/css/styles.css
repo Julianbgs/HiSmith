@@ -941,4 +941,96 @@ textarea:active {
   color: #373737;
 }
 
+.rebec {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 580px;
+  background-image: url("../img/third-section.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rebec__box {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-top: 60px;
+  padding-left: 171px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.rebec__box-title {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #2b2828;
+  margin-bottom: 80px;
+}
+
+.rebec__box-descr {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+.rebec__box-sub-descr {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom: 44px;
+}
+
+.rebec__box-sub-descr:before {
+  position: absolute;
+  display: inline;
+  content: "";
+  width: 2px;
+  height: 39px;
+  background-color: orangered;
+  left: 33.5%;
+  top: 95%;
+}
+
+.rebec__box-more {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  left: 300px;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=styles.css.map */
