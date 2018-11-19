@@ -734,4 +734,82 @@ textarea:active {
   color: #ffffff;
 }
 
+.money {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 589px;
+  background-image: url("../img/second-section.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.money__text-wrapper {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 60px;
+  margin-left: 170px;
+}
+
+.money__title {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.money__descr {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: orangered;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.money__sub-descr {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-family: "PT Sans", arial;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.money__arrow {
+  position: absolute;
+  top: 174px;
+  right: 80px;
+  overflow: hidden;
+  width: 10px;
+  height: 20px;
+}
+
+.money__arrow img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
 /*# sourceMappingURL=styles.css.map */
