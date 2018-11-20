@@ -9,7 +9,7 @@
       position: absolute;
       top: 60px;
       left: 170px;
-      font-family: $PtSans;
+      font-family: $PtSerif;
       font-size: 34px;
       font-weight: normal;
       font-style: normal;
@@ -17,6 +17,18 @@
       line-height: 1;
       letter-spacing: normal;
       color: #ffffff;
+
+      @include breakpoint(max-width 1024px){
+        font-size: 24px;
+      }
+
+      @include breakpoint(max-width 768px){
+        left: 110px;
+      }
+
+      @include breakpoint(max-width 320px){
+        left: 10px;
+      }
     }
 
     &__descr{
@@ -31,12 +43,25 @@
       line-height: normal;
       letter-spacing: normal;
       color: #ffffff;
+
+      @include breakpoint(max-width 1024px){
+        font-size: 20px;
+      }
+
+      @include breakpoint(max-width 768px){
+        left: 280px;
+      }
+
+      @include breakpoint(max-width 320px){
+        left: 10px;
+      }
     }
 
     &__sub-descr{
       position: absolute;
       top: 210px;
       left: 364px;
+      font-family: $PtSerif;
       font-size: 18px;
       font-weight: normal;
       font-style: italic;
@@ -44,6 +69,18 @@
       line-height: 1.44;
       letter-spacing: normal;
       color: #ffffff;
+
+      @include breakpoint(max-width 1024px){
+        font-size: 11px;
+      }
+
+      @include breakpoint(max-width 768px){
+        left: 280px;
+      }
+
+      @include breakpoint(max-width 320px){
+        left: 10px;
+      }
 
       &:before{
         position: absolute;
@@ -54,6 +91,10 @@
         background-color: #ff351b;
         right: -13px;
         top: 66px;
+
+        @include breakpoint(max-width 320px){
+          right: 5px;
+        }
       }
     }
 
@@ -70,5 +111,13 @@
       letter-spacing: 0.6px;
       color: #ffffff;
       text-transform: uppercase;
+
+      @include breakpoint(max-width 1024px){
+        font-size: 6px;
+      }
+
+      @include breakpoint(max-width 768px){
+       right: 12%;
+      }
     }
 }

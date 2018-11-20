@@ -21,10 +21,18 @@
 
     &:nth-of-type(2)::before{
       left: 80px;
+
+      @include breakpoint(max-width 1024px){
+        left: 52px;
+      }
     }
 
     &:nth-of-type(3)::before{
       left: 80px;
+
+      @include breakpoint(max-width 1024px){
+        left: 52px;
+      }
     }
 
     &:before{
@@ -36,6 +44,16 @@
       background-color: white;
       left: 120px;
       top: 14px;
+
+      @include breakpoint(max-width 320px){
+        display: none;
+      }
+
+      @include breakpoint(max-width 1024px){
+        height: 38px;
+        left: 77px;
+        top: 11px;
+      }
     }
   }
 
@@ -51,6 +69,10 @@
     letter-spacing: normal;
     color: #ffffff;
     margin-right: 16px;
+
+    @include breakpoint(max-width 1024px){
+      font-size: 42px;
+    }
   }
 
   &__descr{
@@ -65,6 +87,10 @@
     line-height: 1;
     letter-spacing: normal;
     color: #ffffff;
+
+    @include breakpoint(max-width 1024px){
+      font-size: 14px;
+    }
   }
 }
 

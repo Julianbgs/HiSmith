@@ -3,69 +3,104 @@
   float: left;
   width: 100%;
 
-    &__box-tricks {
+  &__box-tricks {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 500px;
+    padding-left: 280px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    background-color: #636363;
+
+    @include breakpoint(max-width 1024px) {
+      padding-left: 100px;
+    }
+
+    @include breakpoint(max-width 320px) {
+      width: 100%;
+      padding-left: 21px;
+    }
+
+    &-title {
       position: relative;
       float: left;
-      width: 50%;
-      height: 500px;
-      padding-left: 280px;
-      padding-top: 60px;
-      box-sizing: border-box;
-      background-color: #636363;
+      width: 100%;
+      font-family: $PtSerif;
+      font-size: 34px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin-bottom: 64px;
 
-        &-title {
-          position: relative;
-          float: left;
-          width: 100%;
-          font-family: $PtSans;
-          font-size: 34px;
-          font-weight: normal;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1;
-          letter-spacing: normal;
-          color: #ffffff;
-          margin-bottom: 64px;
-        }
-
-      &-img {
-        position: relative;
-        float: left;
-        width: 300px;
-        height: 212px;
-        overflow: hidden;
-        margin-bottom: 13px;
-
-          img{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-          }
-      }
-
-      &-place{
-        position: relative;
-        float: left;
-        width: 100%;
-        font-family: $PtSans;
-        font-size: 18px;
-        font-weight: normal;
-        font-style: italic;
-        font-stretch: normal;
-        line-height: 1.89;
-        letter-spacing: normal;
-        color: #ffffff;
+      @include breakpoint(max-width 768px) {
+        font-size: 24px;
       }
     }
 
-  &__arrow{
+    &-img {
+      position: relative;
+      float: left;
+      width: 300px;
+      height: 212px;
+      overflow: hidden;
+      margin-bottom: 13px;
+
+      @include breakpoint(max-width 768px) {
+        width: 183px;
+        height: 129px;
+      }
+
+      @include breakpoint(max-width 320px) {
+        width: 279px;
+        height: 196px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &-place {
+      position: relative;
+      float: left;
+      width: 100%;
+      font-family: $PtSans;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: italic;
+      font-stretch: normal;
+      line-height: 1.89;
+      letter-spacing: normal;
+      color: #ffffff;
+
+      @include breakpoint(max-width 768px) {
+        font-size: 11px;
+      }
+    }
+  }
+
+  &__arrow {
     position: absolute;
     top: 163px;
     right: 50px;
 
-      &--mod{
-        left: 55%;
+    @include breakpoint(max-width 320px){
+      display: none;
+    }
+
+    &--mod {
+      left: 55%;
+
+      @include breakpoint(max-width 1024px) {
+        left: 85%;
       }
+    }
   }
 
   &__box-lifts {
@@ -78,11 +113,16 @@
     box-sizing: border-box;
     background-color: #dddddd;
 
+    @include breakpoint(max-width 320px) {
+      width: 100%;
+      padding-left: 21px;
+    }
+
     &-title {
       position: relative;
       float: left;
       width: 100%;
-      font-family: $PtSans;
+      font-family: $PtSerif;
       font-size: 34px;
       font-weight: normal;
       font-style: normal;
@@ -91,9 +131,13 @@
       letter-spacing: normal;
       color: #636363;
       margin-bottom: 62px;
+
+      @include breakpoint(max-width 768px) {
+        font-size: 24px;
+      }
     }
 
-    &-descr{
+    &-descr {
       position: relative;
       float: left;
       width: 100%;
@@ -106,9 +150,13 @@
       letter-spacing: normal;
       color: orangered;
       margin-bottom: 28px;
+
+      @include breakpoint(max-width 768px) {
+        font-size: 18px;
+      }
     }
 
-    &-sub-descr{
+    &-sub-descr {
       position: relative;
       float: left;
       width: 100%;
@@ -120,6 +168,10 @@
       line-height: 1.44;
       letter-spacing: normal;
       color: #373737;
+
+      @include breakpoint(max-width 768px) {
+        font-size: 11px;
+      }
     }
   }
 }
