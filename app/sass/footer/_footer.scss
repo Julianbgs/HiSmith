@@ -16,6 +16,10 @@
       position: relative;
       float: left;
       width: 20%;
+
+      @include breakpoint(max-width 320px){
+        width: 100%;
+      }
     }
 
     &-title {
@@ -120,6 +124,14 @@
     padding-left: 78px;
     box-sizing: border-box;
 
+    @include breakpoint(max-width 768px){
+      width: 100%;
+    }
+
+    @include breakpoint(max-width 320px){
+      display: none;
+    }
+
     &-elem {
       position: relative;
       float: left;
@@ -162,6 +174,16 @@
     float: left;
     width: 20%;
 
+    @include breakpoint(max-width 768px){
+      float: right;
+      margin-top: 20px;
+    }
+
+    @include breakpoint(max-width 320px){
+      float: left;
+      width: 100%;
+    }
+
     &-descr {
       position: relative;
       float: left;
@@ -179,6 +201,10 @@
     &-box {
       display: flex;
       margin-top: 10px;
+
+      @include breakpoint(max-width 1024px){
+        width: 100%;
+      }
 
       &--img {
         position: relative;
