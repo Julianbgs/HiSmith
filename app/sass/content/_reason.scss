@@ -3,74 +3,105 @@
   float: left;
   width: 100%;
 
-    &__box {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin-top: 90px;
-      margin-bottom: 90px;
+  &__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    margin-bottom: 90px;
 
-        &-description {
-          font-family: $PtSerif;
-          font-size: 34px;
-          font-weight: normal;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1;
-          letter-spacing: normal;
-          color: #636363;
-          margin-left: 76px;
+    &-description {
+      font-family: $PtSerif;
+      font-size: 34px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #636363;
+      margin-left: 76px;
 
-          @include breakpoint(max-width 1024px){
-            font-size: 24px;
-          }
+      @include breakpoint(max-width 1024px) {
+        font-size: 24px;
+      }
 
-          @include breakpoint(max-width 768px){
-            margin-left: 22px;
-          }
+      @include breakpoint(max-width 768px) {
+        margin-left: 22px;
+      }
+    }
+
+    &-elem {
+      position: relative;
+      font-family: $PtSans;
+      font-size: 28px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.21;
+      letter-spacing: normal;
+      color: #ff351b;
+      margin-left: 84px;
+      margin-top: 11px;
+
+      @include breakpoint(max-width 1024px) {
+        font-size: 16px;
+      }
+
+      @include breakpoint(max-width 768px) {
+        margin-left: 45px;
+      }
+
+      @include breakpoint(max-width 320px) {
+        margin-left: 0;
+      }
+
+      &:before {
+        position: absolute;
+        display: inline;
+        content: "";
+        width: 330px;
+        height: 2px;
+        background-color: #ababab;
+        top: 40px;
+
+        @include breakpoint(max-width 1024px) {
+          width: 193px;
         }
 
-      &-elem {
-        position: relative;
-        font-family: $PtSans;
-        font-size: 28px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.21;
-        letter-spacing: normal;
-        color: #ff351b;
-        margin-left: 84px;
-        margin-top: 11px;
+        @include breakpoint(max-width 320px) {
+          width: 130px;
+        }
+      }
 
-        @include breakpoint(max-width 1024px){
-          font-size: 16px;
+      &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 17px;
+        height: 10px;
+        background-image: url("../img/group-5.png");
+        background-repeat: no-repeat;
+        right: -100%;
+        top: 20px;
+
+        @include breakpoint(max-width 1024px) {
+          top: 7px;
         }
 
-        @include breakpoint(max-width 768px){
-          margin-left: 45px;
+        @include breakpoint(max-width 320px) {
+          right: -36%;
+        }
+      }
+
+      &--mod {
+        margin-left: 218px;
+
+        @include breakpoint(max-width 768px) {
+          margin-left: 145px;
         }
 
-        @include breakpoint(max-width 320px){
-          margin-left: 0;
-        }
-
-        &:before {
-          position: absolute;
-          display: inline;
-          content: "";
-          width: 330px;
-          height: 2px;
-          background-color: #ababab;
-          top: 40px;
-
-          @include breakpoint(max-width 1024px){
-            width: 193px;
-          }
-
-          @include breakpoint(max-width 320px){
-            width: 130px;
-          }
+        @include breakpoint(max-width 320px) {
+          margin-left: 60px;
         }
 
         &:after {
@@ -81,49 +112,18 @@
           height: 10px;
           background-image: url("../img/group-5.png");
           background-repeat: no-repeat;
-          right: -100%;
+          right: -112%;
           top: 20px;
 
-          @include breakpoint(max-width 1024px){
+          @include breakpoint(max-width 1024px) {
             top: 7px;
           }
 
-          @include breakpoint(max-width 320px){
-            right: -36%;
-          }
-        }
-
-        &--mod {
-          margin-left: 218px;
-
-          @include breakpoint(max-width 768px){
-            margin-left: 145px;
-          }
-
-          @include breakpoint(max-width 320px){
-            margin-left: 60px;
-          }
-
-          &:after {
-            position: absolute;
-            display: block;
-            content: "";
-            width: 17px;
-            height: 10px;
-            background-image: url("../img/group-5.png");
-            background-repeat: no-repeat;
-            right: -112%;
-            top: 20px;
-
-            @include breakpoint(max-width 1024px){
-              top: 7px;
-            }
-
-            @include breakpoint(max-width 320px){
-              right: -41%;
-            }
+          @include breakpoint(max-width 320px) {
+            right: -41%;
           }
         }
       }
     }
+  }
 }

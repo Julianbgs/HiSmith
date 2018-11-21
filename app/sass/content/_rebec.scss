@@ -1,4 +1,4 @@
-.rebec{
+.rebec {
   position: relative;
   float: left;
   width: 100%;
@@ -7,120 +7,120 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include breakpoint(max-width 320px){
+  @include breakpoint(max-width 320px) {
     height: 440px;
   }
 
-    &__box{
+  &__box {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 171px;
+    box-sizing: border-box;
+
+    @include breakpoint(max-width 320px) {
+      padding-left: 15px;
+    }
+
+    &-title {
       position: relative;
       float: left;
       width: 100%;
-      padding-top: 60px;
-      padding-left: 171px;
-      box-sizing: border-box;
+      font-family: $PtSans;
+      font-size: 34px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #2b2828;
+      margin-bottom: 80px;
 
-      @include breakpoint(max-width 320px){
-        padding-left: 15px;
+      @include breakpoint(max-width 320px) {
+        font-size: 24px;
+      }
+    }
+
+    &-descr {
+      position: relative;
+      float: left;
+      width: 100%;
+      font-family: $PtSans;
+      font-size: 28px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.21;
+      letter-spacing: normal;
+      color: orangered;
+      margin-bottom: 10px;
+
+      @include breakpoint(max-width 320px) {
+        font-size: 17px;
+      }
+    }
+
+    &-sub-descr {
+      position: relative;
+      float: left;
+      width: 100%;
+      font-family: $PtSans;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      color: #000000;
+      margin-bottom: 44px;
+
+      @include breakpoint(max-width 320px) {
+        font-size: 11px;
       }
 
-        &-title{
-          position: relative;
-          float: left;
-          width: 100%;
-          font-family: $PtSans;
-          font-size: 34px;
-          font-weight: normal;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1;
-          letter-spacing: normal;
-          color: #2b2828;
-          margin-bottom: 80px;
+      &:before {
+        position: absolute;
+        display: inline;
+        content: "";
+        width: 2px;
+        height: 39px;
+        background-color: orangered;
+        left: 33.5%;
+        top: 95%;
 
-          @include breakpoint(max-width 320px){
-            font-size: 24px;
-          }
+        @include breakpoint(max-width 1024px) {
+          left: 45%;
         }
 
-      &-descr{
-        position: relative;
-        float: left;
-        width: 100%;
-        font-family: $PtSans;
-        font-size: 28px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.21;
-        letter-spacing: normal;
-        color: orangered;
-        margin-bottom: 10px;
-
-        @include breakpoint(max-width 320px){
-          font-size: 17px;
-        }
-      }
-
-      &-sub-descr{
-        position: relative;
-        float: left;
-        width: 100%;
-        font-family: $PtSans;
-        font-size: 18px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.44;
-        letter-spacing: normal;
-        color: #000000;
-        margin-bottom: 44px;
-
-        @include breakpoint(max-width 320px){
-          font-size: 11px;
+        @include breakpoint(max-width 768px) {
+          left: 63%;
         }
 
-        &:before{
-          position: absolute;
-          display: inline;
-          content: "";
-          width: 2px;
-          height: 39px;
-          background-color: orangered;
-          left: 33.5%;
-          top: 95%;
-
-          @include breakpoint(max-width 1024px){
-            left: 45%;
-          }
-
-          @include breakpoint(max-width 768px){
-            left: 63%;
-          }
-
-          @include breakpoint(max-width 320px){
-            left: 83%;
-          }
-        }
-      }
-
-      &-more{
-        position: relative;
-        float: left;
-        font-family: $PtSans;
-        font-size: 10px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: 0.6px;
-        color: #ffffff;
-        left: 300px;
-        text-transform: uppercase;
-
-        @include breakpoint(max-width 320px){
-          font-size: 6px;
-          left: 200px;
+        @include breakpoint(max-width 320px) {
+          left: 83%;
         }
       }
     }
+
+    &-more {
+      position: relative;
+      float: left;
+      font-family: $PtSans;
+      font-size: 10px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.6px;
+      color: #ffffff;
+      left: 300px;
+      text-transform: uppercase;
+
+      @include breakpoint(max-width 320px) {
+        font-size: 6px;
+        left: 200px;
+      }
+    }
+  }
 }

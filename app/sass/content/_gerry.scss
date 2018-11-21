@@ -3,27 +3,27 @@
   float: left;
   width: 100%;
 
-    &__title {
-      position: relative;
-      margin-top: 60px;
-      margin-left: 170px;
-      font-family: $PtSans;
-      font-size: 34px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1;
-      letter-spacing: normal;
-      color: #636363;
+  &__title {
+    position: relative;
+    margin-top: 60px;
+    margin-left: 170px;
+    font-family: $PtSans;
+    font-size: 34px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #636363;
 
-      @include breakpoint(max-width 1024px){
-        font-size: 24px;
-      }
-
-      @include breakpoint(max-width 320px){
-        margin-left: 0;
-      }
+    @include breakpoint(max-width 1024px) {
+      font-size: 24px;
     }
+
+    @include breakpoint(max-width 320px) {
+      margin-left: 0;
+    }
+  }
 
   &__slider {
     position: relative;
@@ -32,15 +32,15 @@
     margin-left: 149px;
     margin-top: 50px;
 
-    @include breakpoint(max-width 768px){
+    @include breakpoint(max-width 768px) {
       margin-left: 60px;
     }
 
-    @include breakpoint(max-width 320px){
+    @include breakpoint(max-width 320px) {
       margin-top: 0;
     }
 
-    @include breakpoint(max-width 320px){
+    @include breakpoint(max-width 320px) {
       margin-left: 23px;
     }
   }
@@ -49,28 +49,28 @@
     position: relative;
     float: left;
 
-      &-img {
-        position: relative;
-        width: 1131px;
-        height: 564px;
-        overflow: hidden;
+    &-img {
+      position: relative;
+      width: 1131px;
+      height: 564px;
+      overflow: hidden;
 
-        @include breakpoint(max-width 1024px){
-          width: 678px;
-          height: 338px;
-        }
-
-        @include breakpoint(max-width 320px){
-          width: 257px;
-          height: 338px;
-        }
-
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-          }
+      @include breakpoint(max-width 1024px) {
+        width: 678px;
+        height: 338px;
       }
+
+      @include breakpoint(max-width 320px) {
+        width: 257px;
+        height: 338px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
 
     &-elem {
       position: absolute;
@@ -78,30 +78,30 @@
       top: 0;
       left: 20%;
 
-      @include breakpoint(max-width 1024px){
+      @include breakpoint(max-width 1024px) {
         left: 16%;
       }
 
-      @include breakpoint(max-width 768px){
+      @include breakpoint(max-width 768px) {
         left: 21%;
       }
 
-      @include breakpoint(max-width 320px){
+      @include breakpoint(max-width 320px) {
         display: none;
       }
 
       &:nth-of-type(2) {
         left: 48%;
 
-        @include breakpoint(max-width 1024px){
+        @include breakpoint(max-width 1024px) {
           left: 38%;
         }
 
-        @include breakpoint(max-width 768px){
+        @include breakpoint(max-width 768px) {
           left: 49%;
         }
 
-        @include breakpoint(max-width 320px){
+        @include breakpoint(max-width 320px) {
           display: none;
         }
       }
@@ -109,15 +109,15 @@
       &:nth-of-type(3) {
         left: 77%;
 
-        @include breakpoint(max-width 1024px){
+        @include breakpoint(max-width 1024px) {
           left: 60%;
         }
 
-        @include breakpoint(max-width 768px){
+        @include breakpoint(max-width 768px) {
           left: 77%;
         }
 
-        @include breakpoint(max-width 320px){
+        @include breakpoint(max-width 320px) {
           display: none;
         }
       }
@@ -134,7 +134,7 @@
       letter-spacing: normal;
       color: #000000;
 
-      @include breakpoint(max-width 1024px){
+      @include breakpoint(max-width 1024px) {
         font-size: 10px;
       }
 
@@ -147,7 +147,7 @@
         background-color: orangered;
         top: 45px;
 
-        @include breakpoint(max-width 1024px){
+        @include breakpoint(max-width 1024px) {
           top: 27px;
         }
       }
@@ -164,7 +164,7 @@
       color: #000000;
       margin-top: 16px;
 
-      @include breakpoint(max-width 1024px){
+      @include breakpoint(max-width 1024px) {
         font-size: 6px;
       }
     }
@@ -174,27 +174,27 @@
 
 .slick-prev {
 
-    &:before {
-      position: absolute;
-      display: block;
-      content: "";
-      background-repeat: no-repeat;
-      background-image: url("../img/icons/arrow-prev.png");
-      width: 10px;
-      height: 17px;
-      top: -80px;
-      left: -40px;
+  &:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/arrow-prev.png");
+    width: 10px;
+    height: 17px;
+    top: -80px;
+    left: -40px;
 
-      @include breakpoint(max-width 320px){
-        left: 5%;
-      }
+    @include breakpoint(max-width 320px) {
+      left: 5%;
     }
+  }
 }
 
 .slick-next {
   right: 0;
 
-  @include breakpoint(max-width 320px){
+  @include breakpoint(max-width 320px) {
     right: 15%;
   }
 
@@ -210,15 +210,13 @@
     right: 250px;
     z-index: 1;
 
-    @include breakpoint(max-width 768px){
+    @include breakpoint(max-width 768px) {
       right: 150px;
     }
 
-    @include breakpoint(max-width 320px){
+    @include breakpoint(max-width 320px) {
       right: 5%;
     }
-
-
 
   }
 }

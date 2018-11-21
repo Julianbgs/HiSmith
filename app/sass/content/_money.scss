@@ -7,19 +7,19 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &__text-wrapper{
+  &__text-wrapper {
     position: relative;
     float: left;
     width: 100%;
     margin-top: 60px;
     margin-left: 170px;
 
-    @include breakpoint(max-width 320px){
+    @include breakpoint(max-width 320px) {
       margin-left: 0;
     }
   }
 
-  &__title{
+  &__title {
     position: relative;
     float: left;
     width: 100%;
@@ -33,7 +33,7 @@
     color: #ffffff;
   }
 
-  &__descr{
+  &__descr {
     position: relative;
     float: left;
     width: 100%;
@@ -49,7 +49,7 @@
     margin-bottom: 10px;
   }
 
-  &__sub-descr{
+  &__sub-descr {
     position: relative;
     float: left;
     width: 100%;
@@ -63,7 +63,7 @@
     color: #ffffff;
   }
 
-  &__arrow{
+  &__arrow {
     position: absolute;
     top: 174px;
     right: 80px;
@@ -71,18 +71,18 @@
     width: 10px;
     height: 20px;
 
-    @include breakpoint(max-width 1024px){
+    @include breakpoint(max-width 1024px) {
       right: 20%;
     }
 
-    @include breakpoint(max-width 768px){
+    @include breakpoint(max-width 768px) {
       right: 30%;
     }
 
-      img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 }
